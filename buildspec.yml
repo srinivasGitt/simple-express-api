@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - echo Installing dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Build started on `date`
+      # If you have a build script, run it here. For a simple app, this may not be needed.
+      - echo Build completed on `date`
+
+artifacts:
+  files:
+    - '**/*'
