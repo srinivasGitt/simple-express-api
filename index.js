@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     res.send('hello world')
 })
 
-app.get('/object', (req, res) => {
+app.get('/objects', (req, res) => {
     res.json(objects);
 
 })
