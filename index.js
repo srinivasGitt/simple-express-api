@@ -11,12 +11,13 @@ app.get('/', (req, res) => {
     res.send('hello world')
 })
 
-app.get('/objects', (req, res) => {
+app.get('/object', (req, res) => {
     res.json(objects);
 
 })
 
 const port = process.env.PORT || 3000;
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
