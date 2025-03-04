@@ -8,7 +8,7 @@ const objects = [
 ];
 
 app.get('/', (req, res) => {
-    res.send('hello world')
+    res.send('hello world hi')
 })
 
 app.get('/objects', (req, res) => {
